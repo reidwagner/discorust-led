@@ -2,7 +2,7 @@
 
 target=$1
 
-if [[ $target =~ "(debug|release)" ]]; then
+if [[ ! $target =~ debug|release ]]; then
     echo "Specify debug or release."
     exit 1
 fi
